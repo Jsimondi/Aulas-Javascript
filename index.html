@@ -2,12 +2,32 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>Calculadora</title>
 </head>
 
 <body>
-    
+    <h1>Calculadora</h1>
+    <div style="display: flex;">
+        <div>
+            <p>Operações</p>
+            <p>1. Adicionar</p>
+            <p>2. Subtrair</p>
+            <p>3. Multiplicar</p>
+            <p>4. Dividir</p>
+            <p>5. Raiz Quadrada</p>
+            <input placeholder="Operação..." id="operacaoInput" type="number">
+            <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <div>
+            <p>Valor 1</p>
+            <input placeholder="Valor 1" id="value1" type="number">
+            <p>Valor 2</p>
+            <input placeholder="Valor 2" id="value2" type="number">
+        </div>
+    </div>
 </body>
+
 
 </html>
