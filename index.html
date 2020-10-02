@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="index.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="calcmarcs.js"></script>
     <title>Calculadora</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- <h1>Calculadora JooJ</h1>
+
+    <div style="display: flex;">
+
+        <div>
+            <p> Operações</p>
+            <p>1. Adição</p>
+            <p>2. Subtração</p>
+            <p>3. Multiplicação</p>
+            <p>4. Divisão</p>
+            <p>5. Raiz quadrada</p>
+            <input placeholder="Selecione a operação..." id="inputOperation" type="number">
+            <button onclick="calcular()">Calcular</button>
+        </div>
+
+        <div>
+            <p>Valor 1:</p>
+            <input placeholder="Insira um número..." id="value1">
+            <p>Valor 2:</p>
+            <input placeholder="Insira um número..." id="value2">
+        </div>
     
-</body>
+    </div> -->
 
+    <h1>Calculadora Marcs</h1>
+
+    <div class="calculator">
+
+        <div class="display">
+            <input type="number" placeholder="0" disabled>
+        </div>
+
+        <div class="keyboard">
+            <div class="upperRow">
+                <button value="7">7</button>
+                <button value="8">8</button>
+                <button value="9">9</button>
+                <button value="+" class="operator">+</button>
+            </div>
+
+            <div class="midRow">
+                <button value="4">4</button>
+                <button value="5">5</button>
+                <button value="6">6</button>
+                <button value="-" class="operator">-</button>
+            </div>
+
+            <div class="lowerRow">
+                <button value="1">1</button>
+                <button value="2">2</button>
+                <button value="3">3</button>
+                <button value="*" class="operator">*</button>
+            </div>
+
+            <div class="floorRow">
+                <button value="C" class="operator">c</button>
+                <button value="0">0</button>
+                <button value="/" class="operator">/</button>
+                <button value="=" class="operator">=</button>
+            </div>
+        </div>
+
+    </div>
+  </body>
 </html>
